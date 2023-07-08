@@ -1,0 +1,74 @@
+.boxHeader {
+  height: 30%;
+  display: flex;
+  /*justify-content: flex-end;*/
+  justify-content: inherit;
+  align-items: flex-end;
+  padding: 3px;
+  margin-top: 3%; /*aop - newly added*/
+  font-size: min(3vw, 1rem); /*aop - 4vw to 3vw*/
+  font-weight: 300; /*aop - newly added*/
+  }
+
+.boxHeaderDate {
+  display: flex;
+  /*justify-content: flex-end;*/
+  justify-content: inherit;
+  align-items: flex-end;
+  font-size: min(3vw, 1rem); /*aop - 4vw to 3vw*/
+  font-weight: 300; /*aop - newly added*/
+  }
+
+.boxValue {
+  color: black;
+  flex-grow: 1;
+  display: flex;
+  /*justify-content: flex-end;*/
+  justify-content: inherit;
+  align-items: center;
+  font-size: min(5.5vw, 32px);
+  overflow: hidden;
+  font-weight: 400;
+  height: 50%;
+}
+
+.boxFooter {
+  height: 20%;
+  display: flex;
+  /*justify-content: flex-end;*/
+  justify-content: inherit;
+  /* align-items: flex-end; */
+  padding: 3px;
+  margin-top: auto;
+  font-size: min(3vw, 1rem); /*aop - 4vw to 3vw*/
+  font-weight: 300; /*aop - newly added*/
+}
+
+.positiveYOY {
+  color:#48a904;
+  font-weight: 300; /*aop - 500 to 300*/
+}
+
+.negativeYOY {
+  color:#ff0000;
+  font-weight: 300; /*aop - 500 to 300*/
+}
+
+.heroBox {
+  /*width:30%; */
+  border-radius: 8px; /*aop - 7px to 8%*/
+  /* height: 100px; */
+  display:flex;
+  flex-direction: column;
+  /* padding: 5px; */
+  overflow: hidden;
+  margin: 5px;
+  justify-content: flex-end;
+  /*aop - newly added start*/
+  /*font-weight: 500;
+  width: 100%;
+  max-width: 120px;
+  height: 100px;
+  max-height: 120px;*/
+  /*aop - newly added end*/
+}

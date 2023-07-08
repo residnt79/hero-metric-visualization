@@ -1,0 +1,121 @@
+.container {
+  /* background: #000000;  */
+  /* min-width: 250px;
+  max-width: 550px;
+  min-height: 105px;  */
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  /* margin-top: 5%; */
+  overflow: hidden;
+  height: 100%;
+}
+
+.text-element {
+  height: 100%;
+  width: 100%
+}
+
+.boxContainer {
+    font-family: Roboto, 'Noto Sans', 'Noto Sans JP', 'Noto Sans CJK KR', 'Noto Sans Arabic UI',
+    'Noto Sans Devanagari UI', 'Noto Sans Hebrew', 'Noto Sans Thai UI', Helvetica, Arial, sans-serif; /*aop - newly added*/
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 5px; */
+    text-align: center; /*aop - right to center*/
+    overflow: hidden;
+    /*aop - newly added start*/
+    box-sizing: border-box;
+    /*aop - newly added end*/
+    height: 75%;
+    width: 100%;
+  }
+  
+  .titleBar {
+    font-family: Roboto, 'Noto Sans', 'Noto Sans JP', 'Noto Sans CJK KR', 'Noto Sans Arabic UI',
+    'Noto Sans Devanagari UI', 'Noto Sans Hebrew', 'Noto Sans Thai UI', Helvetica, Arial, sans-serif; /*aop - newly added*/
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem; /*aop - 24px to 18px*/
+    font-weight: 400;
+    /*aop - newly added start*/
+    box-sizing: border-box;
+   /* margin-top: 20px; */
+    /*aop - newly added end*/
+  }
+
+  .alttitleBar {
+    font-family: Roboto, 'Noto Sans', 'Noto Sans JP', 'Noto Sans CJK KR', 'Noto Sans Arabic UI',
+    'Noto Sans Devanagari UI', 'Noto Sans Hebrew', 'Noto Sans Thai UI', Helvetica, Arial, sans-serif; /*aop - newly added*/
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem; /*aop - 24px to 18px*/
+    font-weight: 400;
+    box-sizing: border-box;
+  }
+
+  .na {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .titleBar:hover {
+    color: #6e6e6e;
+    cursor: default;
+  }
+
+  .tooltip {
+    position: relative;
+  }
+  
+  .tooltip-trigger {
+    display: inline-block;
+  }
+  
+  .tooltip-bubble {
+    min-width: 310px;
+    max-width: 610px;
+    position: absolute;
+    z-index: 10;
+  
+  }
+  
+  .tooltip-bottom {
+    top: 100%;
+    left: 50%;
+    padding-top: 5px;
+    transform: translateX(-50%);
+  }
+    
+  .tooltip-bottom ::after {
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom: 9px solid #262d33;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+    
+  .tooltip-message {
+    background: #262d33;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: .75em;
+    text-align: left;
+  }
+
+  .icon {
+    display: inline-block;
+    transform: translateY(15%);
+    fill: #2f2f2f;
+  }
